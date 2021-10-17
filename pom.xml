@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	
+	<groupId>io.github.anantharajuc</groupId>
+	<artifactId>java8</artifactId>
+	<version>latest</version>
+	<packaging>jar</packaging>
+	
+	<name>Java8</name>
+	<url>https://github.com/AnanthaRajuC/Java8</url>
+	<description>Java 8 Features</description>
+	
+	<!-- Start - Project Owner -->
+	<developers>
+		<developer>
+			<name>Anantha Raju C</name>
+			<email>arcswdev@gmail.com</email>
+			<timezone>UTC+05:30</timezone>
+		</developer>
+	</developers>
+	<!-- End - Project Owner -->
+	
+	<!-- Start - Source Repository -->
+    <scm>
+        <connection>https://github.com/AnanthaRajuC/Java8.git</connection>
+        <developerConnection>git@github.com:AnanthaRajuC/Java8.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+    <!-- End - Source Repository -->
+    
+    <!-- Start - Issue's Management -->
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/AnanthaRajuC/Java8/issues</url>
+    </issueManagement>
+    <!-- End - Issue's Management -->
+	
+	<properties>
+		<!--  Dependencies versions properties  -->
+		<java.version>1.8</java.version>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- Start - POJO creation made easy -->
+		<dependency>
+		     <groupId>org.projectlombok</groupId>
+		     <artifactId>lombok</artifactId>
+		     <optional>true</optional>
+	    </dependency>
+	    <!-- End - POJO creation made easy -->
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- Package as an executable jar/war. -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
